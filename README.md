@@ -21,6 +21,14 @@
 15. [Version-Controlled Databases](#15-version-controlled-databases)
 16. [Event-Sourcing Databases](#16-event-sourcing-databases)
 17. [CRDT & Local-First Sync Engines](#17-crdt--local-first-sync-engines)
+18. [Object Databases](#18-object-databases)
+19. [RDF / Triple Stores & Knowledge Graphs](#19-rdf--triple-stores--knowledge-graphs)
+20. [Multi-Model Databases](#20-multi-model-databases)
+21. [Streaming & Real-Time Databases](#21-streaming--real-time-databases)
+22. [Data Lakehouse & Table Formats](#22-data-lakehouse--table-formats)
+23. [Query Engines & Federation](#23-query-engines--federation)
+24. [Cache & Data Grid](#24-cache--data-grid)
+25. [Mobile & Local-First Databases](#25-mobile--local-first-databases)
 
 ---
 
@@ -48,6 +56,14 @@
 * [**Apache Derby**](https://db.apache.org/derby/) – Open-source relational database implemented entirely in Java
 * [**BadgerDB**](https://github.com/dgraph-io/badger) – Fast embedded key-value database written in Go
 * [**Sled**](https://github.com/spacejam/sled) – Modern embedded key-value store written in Rust
+* [**Couchbase Lite**](https://www.couchbase.com/products/lite) – Embedded, syncable JSON document database for mobile and edge devices
+* [**PouchDB**](https://pouchdb.com) – JavaScript database that syncs with CouchDB, runs in the browser
+* [**NeDB**](https://github.com/louischatriot/nedb) – Embedded persistent database for Node.js, Electron, and the browser
+* [**LokiJS**](https://github.com/techfort/LokiJS) – Fast, in-memory document-oriented datastore for Node.js and browser
+* [**LowDB**](https://github.com/typicode/lowdb) – Small local JSON database powered by Lodash
+* [**ZODB**](https://zodb.org) – Native object database for Python applications
+* [**db4o**](https://en.wikipedia.org/wiki/Db4o) – Object database for Java and .NET (legacy)
+* [**ObjectDB**](https://www.objectdb.com) – Object-oriented database management system for Java
 
 ---
 
@@ -70,6 +86,10 @@
 * [**MyScale**](https://github.com/myscale/myscaledb) – Vector database tailored for SQL-based AI workloads
 * [**Zilliz**](https://zilliz.com) – Cloud-managed enterprise platform powered by Milvus
 * [**zvec**](https://github.com/alibaba/zvec) – Embedded vector database designed for on-device RAG
+* [**pgvector**](https://github.com/pgvector/pgvector) – Open-source vector similarity search extension for PostgreSQL
+* [**sqlite-vec**](https://github.com/asg017/sqlite-vec) – Vector search extension for SQLite, runs anywhere SQLite runs
+* [**DuckDB VSS**](https://duckdb.org/docs/extensions/vss) – Vector similarity search extension for DuckDB
+* [**Apache Lucene**](https://lucene.apache.org) – Java library providing full-text search with vector similarity support
 
 ---
 
@@ -117,6 +137,12 @@
 * [**Percona Server for MySQL**](https://www.percona.com/mysql/software/percona-server-for-mysql) – Enterprise-enhanced drop-in replacement for MySQL
 * [**Virtuoso**](https://virtuoso.openlinksw.com) – Hybrid relational engine with SPARQL capabilities
 * [**SQLite Cloud**](https://sqlitecloud.io) – Cloud-distributed implementation of SQLite engines
+* [**SAP HANA**](https://www.sap.com/products/technology-platform/hana.html) – In-memory, column-based relational database available as appliance or cloud service
+* [**NuoDB**](https://www.nuodb.com) – Webscale distributed SQL database supporting ACID transactions
+* [**VoltDB**](https://www.voltactivedata.com) – Distributed in-memory NewSQL RDBMS for high-frequency OLTP applications
+* [**MySQL Cluster**](https://www.mysql.com/products/cluster/) – Shared-nothing distributed MySQL with NDB storage engine
+* [**Azure SQL Database**](https://azure.microsoft.com/products/azure-sql/database/) – Fully managed intelligent cloud SQL database
+* [**Azure Synapse Analytics**](https://azure.microsoft.com/products/synapse-analytics) – Cloud data warehouse formerly known as Azure SQL Data Warehouse
 
 ---
 
@@ -139,6 +165,10 @@
 * [**eXist-db**](https://exist-db.org) – Open-source native XML database
 * [**Tigris**](https://github.com/tigrisdata/tigris) – Serverless document database built for cloud developers
 * [**Percona Server for MongoDB**](https://www.percona.com/mongodb/software/percona-server-for-mongodb) – Enterprise replacement for MongoDB Community Edition
+* [**PouchDB**](https://pouchdb.com) – JavaScript document database that syncs with CouchDB
+* [**NeDB**](https://github.com/louischatriot/nedb) – Embedded persistent document database for Node.js
+* [**LokiJS**](https://github.com/techfort/LokiJS) – In-memory document-oriented datastore for Node.js and browser
+* [**LowDB**](https://github.com/typicode/lowdb) – Small local JSON database powered by Lodash
 
 ---
 
@@ -152,12 +182,13 @@
 * [**TiKV**](https://tikv.org) – Distributed transactional key-value database engine
 * [**FoundationDB**](https://www.foundationdb.org) – Distributed key-value database built for ACID transactions
 * [**BoltDB**](https://github.com/etcd-io/bbolt) – Pure Go persistent key-value store
-* [**BerkleyDB KV**](https://www.oracle.com/database/technologies/related/berkeleydb.html) – Low-level key-value data storage framework
+* [**BerkeleyDB KV**](https://www.oracle.com/database/technologies/related/berkeleydb.html) – Low-level key-value data storage framework
 * [**UnQLite KV**](https://unqlite.org) – Transactional key-value engine
 * [**Sled KV**](https://github.com/spacejam/sled) – Embedded lock-free key-value database
 * [**Redict**](https://redict.io) – Copy-left open-source key-value database
-* [**HyperDex**](https://github.com/rescrv/HyperDex) – Searchable key-value store offering consistency and speed
+* [**HyperDex**](https://github.com/rescrv/HyperDex) – Searchable key-value store offering consistency and speed (legacy)
 * [**Oracle Coherence**](https://coherence.community) – Enterprise-grade distributed key-value data grid
+* [**Riak KV**](https://riak.com/products/riak-kv/) – Distributed NoSQL key-value store written in Erlang
 
 ---
 
@@ -174,9 +205,12 @@
 * [**Hazelcast**](https://hazelcast.com) – Distributed in-memory data grid system
 * [**Apache Geode**](https://geode.apache.org) – Real-time in-memory data management system
 * [**GridGain**](https://www.gridgain.com) – Enterprise in-memory computing platform built on Apache Ignite
-* [**MemDB**](https://github.com/search?q=memdb&type=repositories) – Distributed transactional in-memory database engine
 * [**Tarantool**](https://www.tarantool.io) – In-memory database and application server engine
 * [**Mnesia**](https://www.erlang.org/doc/apps/mnesia/) – Distributed in-memory DBMS built into Erlang/OTP
+* [**SAP HANA**](https://www.sap.com/products/technology-platform/hana.html) – In-memory column-based relational data store
+* [**VoltDB**](https://www.voltactivedata.com) – In-memory NewSQL RDBMS for high-throughput OLTP
+* [**Oracle TimesTen**](https://www.oracle.com/database/technologies/timesten.html) – In-memory SQL relational database delivering microsecond response for OLTP applications
+* [**Apache Ignite**](https://ignite.apache.org) – Distributed in-memory computing platform and data grid
 
 ---
 
@@ -198,8 +232,11 @@
 * [**Exasol**](https://www.exasol.com) – In-memory columnar analytics database
 * [**Vertica**](https://www.vertica.com) – Massively parallel processing columnar database engine
 * [**Hydra**](https://github.com/hydradatabase/hydra) – Open-source columnar PostgreSQL extension for analytics
-* [**SlothDB**](https://github.com/search?q=slothdb&type=repositories) – In-process analytical SQL database written in C++
 * [**chDB**](https://github.com/chdb-io/chdb) – Embedded ClickHouse engine running in-process
+* [**Apache Kylin**](https://kylin.apache.org) – Distributed analytical data warehouse providing SQL and multidimensional analysis on Hadoop and Spark
+* [**Apache Phoenix**](https://phoenix.apache.org) – Relational database engine that runs SQL queries on HBase
+* [**Apache Kudu**](https://kudu.apache.org) – Columnar storage engine for fast analytics on rapidly changing data
+* [**Apache Hive**](https://hive.apache.org) – Data warehouse software for reading, writing, and managing large datasets in distributed storage
 
 ---
 
@@ -221,8 +258,8 @@
 * [**Stardog**](https://www.stardog.com) – Enterprise knowledge graph database platform
 * [**GraphDB**](https://graphdb.ontotext.com) – Semantic RDF graph database engine
 * [**Apache HugeGraph**](https://hugegraph.apache.org) – Distributed graph database designed for massive data graphs
-* [**Omnigraph**](https://github.com/search?q=omnigraph&type=repositories) – Typed graph database built natively for agentic workloads
-* [**Actionbase**](https://github.com/kakao/actionbase) – Graph engine built for user interactions
+* [**AgensGraph**](https://bitnine.net/agensgraph/) – Multi-model graph database based on PostgreSQL
+* [**RedisGraph**](https://redis.io/docs/stack/graph/) – Graph database module for Redis (deprecated)
 
 ---
 
@@ -239,8 +276,11 @@
 * [**Apache IoTDB**](https://iotdb.apache.org) – High-performance time-series database for IoT infrastructure
 * [**Graphite**](https://graphiteapp.org) – Scalable real-time graphing time-series database
 * [**OpenTSDB**](http://opentsdb.net) – Distributed time-series database built on top of Apache HBase
-* [**VictoriaMetrics Cloud**](https://victoriametrics.com/products/cloud/) – Managed time-series infrastructure platform
 * [**ReductStore**](https://www.reduct.store) – High-performance blob and time-series storage engine
+* [**kdb+**](https://kx.com) – High-performance columnar time-series database used in finance
+* [**Thanos**](https://thanos.io) – Highly available Prometheus setup with long-term storage capabilities
+* [**Cortex**](https://cortexmetrics.io) – Horizontally scalable, multi-tenant Prometheus-compatible time-series store
+* [**Grafana Mimir**](https://grafana.com/oss/mimir/) – Horizontally scalable, long-term storage for Prometheus metrics
 
 ---
 
@@ -273,6 +313,8 @@
 * [**Tantivy**](https://github.com/quickwit-oss/tantivy) – Rust-based full-text search engine library
 * [**Bleve**](https://blevesearch.com) – Modern text indexing engine written in Go
 * [**Sonic**](https://github.com/valeriansaliou/sonic) – Lightweight, fast search backend written in Rust
+* [**Algolia**](https://www.algolia.com) – Fully managed search-as-a-service solution with SDKs for most languages
+* [**Swiftype**](https://swiftype.com) – Search-as-a-service platform for websites and mobile applications
 
 ---
 
@@ -285,6 +327,10 @@
 * [**SpatiaLite**](https://www.gaia-gis.it/fossil/libspatialite/) – Spatial extension for SQLite database engine
 * [**H3 Engine**](https://h3geo.org) – Hexagonal hierarchical spatial indexing database engine
 * [**GeoServer**](https://geoserver.org) – Open-source server for sharing geospatial data
+* [**MongoDB Geospatial**](https://www.mongodb.com/docs/manual/geospatial-queries/) – Native geospatial indexing and querying via GeoJSON
+* [**Elasticsearch Geo**](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-queries.html) – Geospatial search capabilities within Elasticsearch
+* [**Redis Geo**](https://redis.io/docs/interact/search-and-query/query/geo/) – Geospatial indexing commands for location-based queries
+* [**GeoMesa**](https://www.geomesa.org) – Distributed spatio-temporal database built on Apache Accumulo, HBase, and Cassandra
 
 ---
 
@@ -292,8 +338,8 @@
 
 *Databases providing cryptographically verifiable, append-only, and tamper-proof logs.*
 
-* [**ImmuDB**](https://immudb.io) – Lightweight open-source immutable database built for audit logs
-* [**Amazon QLDB**](https://aws.amazon.com/qldb/) – Fully managed quantum ledger database service
+* [**immudb**](https://immudb.io) – Lightweight open-source immutable database built for audit logs
+* [**Amazon QLDB**](https://aws.amazon.com/qldb/) – Fully managed quantum ledger database service (legacy/discontinued)
 * [**Fluree**](https://flur.ee) – Immutable graph ledger database platform
 * [**BigchainDB**](https://www.bigchaindb.com) – Decentralized database with blockchain characteristics
 
@@ -306,7 +352,7 @@
 * [**Dolt**](https://github.com/dolthub/dolt) – Git-style version-controlled SQL database
 * [**TerminusDB**](https://terminusdb.com) – Knowledge graph database with version-control revision workflows
 * [**Datomic**](https://www.datomic.com) – Transactional database offering time-travel historical queries
-* [**Noms**](https://github.com/attic-labs/noms) – Versionable, Git-like decentralized database engine
+* [**Noms**](https://github.com/attic-labs/noms) – Versionable, Git-like decentralized database engine (legacy)
 
 ---
 
@@ -326,3 +372,138 @@
 * [**ElectricSQL**](https://electric-sql.com) – Sync engine linking PostgreSQL with edge SQLite databases
 * [**PowerSync**](https://www.powersync.com) – Local-first synchronization layer for mobile and edge applications
 * [**Triplit**](https://www.triplit.dev) – Full-stack relational database with real-time automatic synchronization
+* [**Automerge**](https://automerge.org) – JSON-like CRDT library for building collaborative applications
+* [**Yjs**](https://yjs.dev) – High-performance CRDT framework for building collaborative software
+* [**Replicache**](https://replicache.dev) – Client-side sync framework for building local-first web apps
+* [**Evolu**](https://www.evolu.dev) – Local-first platform with CRDT-based sync and SQLite storage
+* [**Jazz**](https://jazz.tools) – Framework for building local-first apps with sync and collaboration
+* [**TinyBase**](https://tinybase.org) – Reactive data store with synchronization and persistence for local-first apps
+* [**Dexie.js**](https://dexie.org) – IndexedDB wrapper with sync capabilities for local-first web applications
+
+---
+
+### 18. Object Databases
+
+*Databases that store data as native objects, closely integrating with object-oriented programming languages.*
+
+* [**ZODB**](https://zodb.org) – Native object database for Python applications
+* [**db4o**](https://en.wikipedia.org/wiki/Db4o) – Object database for Java and .NET, known for its simplicity
+* [**ObjectDB**](https://www.objectdb.com) – Object-oriented database management system for Java
+* [**GemStone/S**](https://gemtalksystems.com/products/gs64/) – Mature object database and application server for Smalltalk
+* [**ObjectStore**](https://en.wikipedia.org/wiki/ObjectStore) – Object-oriented database from Object Design Inc.
+* [**Versant Object Database**](https://en.wikipedia.org/wiki/Versant_Corporation) – Object database for C++, Java, and .NET
+* [**Perst**](https://www.mcobject.com/perst/) – Embedded object-oriented database for Java and .NET
+* [**Magma**](http://wiki.squeak.org/squeak/2665) – Smalltalk object database inspired by GemStone
+
+---
+
+### 19. RDF / Triple Stores & Knowledge Graphs
+
+*Databases optimized for storing and querying RDF triples and semantic knowledge graphs.*
+
+* [**AllegroGraph**](https://allegrograph.com) – Distributed graph and document database supporting OWL reasoning
+* [**Blazegraph**](https://blazegraph.com) – High-performance RDF triple store with GPU acceleration
+* [**Apache Jena TDB**](https://jena.apache.org/documentation/tdb/) – Native RDF triple store component of the Apache Jena framework
+* [**Eclipse RDF4J**](https://rdf4j.org) – Java framework for processing RDF data, formerly known as Sesame
+* [**GraphDB**](https://graphdb.ontotext.com) – Semantic RDF graph database engine from Ontotext
+* [**Stardog**](https://www.stardog.com) – Enterprise knowledge graph platform with reasoning capabilities
+* [**Virtuoso Universal Server**](https://virtuoso.openlinksw.com) – Hybrid RDF and relational database server
+* [**MarkLogic**](https://www.progress.com/marklogic) – Multi-model database with native RDF and triple store support
+* [**AnzoGraph DB**](https://www.cambridgesemantics.com/anzograph/) – Massively parallel RDF graph database for analytics
+
+---
+
+### 20. Multi-Model Databases
+
+*Databases that natively support multiple data models (document, graph, key-value, relational) within a single engine.*
+
+* [**ArangoDB**](https://arangodb.com) – Native multi-model database supporting document, graph, and key-value models
+* [**OrientDB**](https://orientdb.org) – Multi-model database supporting document, graph, key-value, and object models
+* [**SurrealDB**](https://surrealdb.com) – Multi-model database with document, graph, and relational capabilities
+* [**MarkLogic**](https://www.progress.com/marklogic) – Multi-model enterprise database for documents, RDF, and semantics
+* [**Azure Cosmos DB**](https://azure.microsoft.com/products/cosmos-db) – Globally distributed multi-model database with multiple API choices
+* [**Couchbase**](https://www.couchbase.com) – Distributed multi-model database with document and key-value models
+* [**InterSystems IRIS**](https://www.intersystems.com/products/intersystems-iris/) – Multi-model database with relational, object, and document support
+* [**FaunaDB**](https://fauna.com) – Distributed multi-model database with document and relational capabilities
+
+---
+
+### 21. Streaming & Real-Time Databases
+
+*Databases that continuously ingest, process, and serve data in real time through incrementally updated materialized views.*
+
+* [**Materialize**](https://materialize.com) – Streaming database for consistency-critical workloads using SQL
+* [**RisingWave**](https://risingwave.com) – Streaming database for cloud-scale real-time data processing
+* [**ksqlDB**](https://ksqldb.io) – Kafka-native streaming SQL engine for real-time data processing
+* [**Timeplus**](https://www.timeplus.com) – Unified stream and batch SQL engine for real-time analytics
+* [**DeltaStream**](https://deltastream.io) – Multi-cloud streaming database for real-time data pipelines
+* [**Rockset**](https://rockset.com) – Real-time analytics database for cloud data
+* [**Apache Flink**](https://flink.apache.org) – Distributed stream processing engine with SQL support
+* [**Arroyo**](https://www.arroyo.dev) – Distributed stream processing engine with SQL-based pipelines
+
+---
+
+### 22. Data Lakehouse & Table Formats
+
+*Open table formats that bring ACID transactions and schema evolution to data lakes.*
+
+* [**Delta Lake**](https://delta.io) – Open-source storage framework providing ACID transactions on data lakes
+* [**Apache Iceberg**](https://iceberg.apache.org) – Open table format for huge analytic datasets with schema evolution
+* [**Apache Hudi**](https://hudi.apache.org) – Transactional data lake platform with upserts and incremental processing
+* [**Apache Paimon**](https://paimon.apache.org) – Streaming lakehouse table format with real-time updates
+* [**Apache CarbonData**](https://carbondata.apache.org) – Indexed columnar storage format for big data analytics
+* [**Lance**](https://lancedb.github.io/lance/) – Columnar data format optimized for ML workloads and vector search
+
+---
+
+### 23. Query Engines & Federation
+
+*SQL query engines that federate across multiple data sources without moving data.*
+
+* [**Trino**](https://trino.io) – Distributed SQL query engine for querying heterogeneous data sources
+* [**Presto**](https://prestodb.io) – Distributed SQL query engine for big data analytics
+* [**Apache Drill**](https://drill.apache.org) – Schema-free SQL query engine for NoSQL, RDBMS, Hadoop, and cloud storage
+* [**Apache Impala**](https://impala.apache.org) – Massively parallel SQL query engine for Hadoop data
+* [**Dremio**](https://www.dremio.com) – Self-service data analytics platform with data virtualization and acceleration
+
+---
+
+### 24. Cache & Data Grid
+
+*In-memory distributed caching layers and data grids for high-performance applications.*
+
+* [**Redis**](https://redis.io) – In-memory data structure store with caching, pub/sub, and more
+* [**Valkey**](https://valkey.io) – Open-source, high-performance in-memory data store
+* [**Memcached**](https://memcached.org) – Distributed memory object caching system
+* [**Hazelcast**](https://hazelcast.com) – Distributed in-memory data grid
+* [**Apache Ignite**](https://ignite.apache.org) – Distributed in-memory computing platform and data grid
+* [**Oracle Coherence**](https://coherence.community) – Enterprise-grade distributed key-value data grid
+* [**Dragonfly**](https://www.dragonflydb.io) – High-throughput in-memory data store compatible with Redis
+
+---
+
+### 25. Mobile & Local-First Databases
+
+*Databases designed for mobile, edge, and local-first applications with offline sync capabilities.*
+
+* [**Couchbase Lite**](https://www.couchbase.com/products/lite) – Embedded, syncable JSON document database for mobile and edge
+* [**PouchDB**](https://pouchdb.com) – JavaScript database that syncs with CouchDB, runs in the browser
+* [**RxDB**](https://rxdb.info) – Local-first reactive database engine for Web Applications
+* [**WatermelonDB**](https://watermelondb.dev) – High-performance reactive database framework for React Native
+* [**ObjectBox**](https://objectbox.io) – High-speed embedded database for mobile and IoT applications
+* [**Dexie.js**](https://dexie.org) – IndexedDB wrapper for local-first web applications
+* [**Realm**](https://github.com/realm/realm-core) – Mobile-first object database for client applications
+* [**UnQLite**](https://unqlite.org) – Embedded NoSQL transactional database engine
+* [**TinyBase**](https://tinybase.org) – Reactive data store with synchronization for local-first apps
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! To add a database, please use the issue template.
+
+## 📜 License
+
+[![CC0](https://img.shields.io/badge/License-CC0%201.0-lightgrey?style=for-the-badge)](LICENSE)
+
+To the extent possible under law, all contributors have waived all copyright and related or neighboring rights to this work.
